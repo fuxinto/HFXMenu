@@ -18,7 +18,7 @@
 - (void)switchViewWithCurrentViewIndex:(NSInteger)index;
 
 @end
-@interface HFXSwitchView : UIView
+@interface FXSwitchView : UIView
 
 /**
  上方文字颜色

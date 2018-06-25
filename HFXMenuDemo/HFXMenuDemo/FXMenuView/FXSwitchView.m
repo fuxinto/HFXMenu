@@ -6,18 +6,18 @@
 //  Copyright © 2017年 黄福鑫. All rights reserved.
 //
 
-#import "HFXSwitchView.h"
-#import "HFXTitleView.h"
-@interface HFXSwitchView ()<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+#import "FXSwitchView.h"
+#import "FXTitleView.h"
+@interface FXSwitchView ()<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 
 
 @property (nonatomic, assign) NSInteger vcIndex;
-@property (nonatomic, strong) HFXTitleView *titleView;
+@property (nonatomic, strong) FXTitleView *titleView;
 @property (nonatomic, strong) UIPageViewController *pageVC;
 @property (nonatomic, strong, nonnull) NSArray <UIViewController *>* controllers;
 @end
 
-@implementation HFXSwitchView
+@implementation FXSwitchView
 
 
 - (instancetype)initWithFrame:(CGRect)frame WithTitles:(NSArray *)titles WithController:(NSArray *)controllers {
@@ -139,9 +139,9 @@
     return _pageVC;
 }
 
-- (HFXTitleView *)titleView {
+- (FXTitleView *)titleView {
     if (!_titleView) {
-        _titleView = [[HFXTitleView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.titleViewHeight)];
+        _titleView = [[FXTitleView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.titleViewHeight)];
         _titleView.backgroundColor = [UIColor whiteColor];
         _titleView.titleColor = [UIColor blackColor];
         _titleView.selectedTitleColor = [UIColor redColor];

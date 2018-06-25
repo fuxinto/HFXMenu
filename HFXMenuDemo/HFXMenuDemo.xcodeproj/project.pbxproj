@@ -15,8 +15,8 @@
 		18A20B4620A3DACD00046DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A20B4520A3DACD00046DD5 /* main.m */; };
 		18A20B5020A3DACE00046DD5 /* HFXMenuDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A20B4F20A3DACE00046DD5 /* HFXMenuDemoTests.m */; };
 		18A20B5B20A3DACE00046DD5 /* HFXMenuDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A20B5A20A3DACE00046DD5 /* HFXMenuDemoUITests.m */; };
-		18A20B6D20A3DC4D00046DD5 /* HFXSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A20B6B20A3DC4D00046DD5 /* HFXSwitchView.m */; };
-		18A20B6E20A3DC4D00046DD5 /* HFXTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A20B6C20A3DC4D00046DD5 /* HFXTitleView.m */; };
+		18A20B6D20A3DC4D00046DD5 /* FXSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A20B6B20A3DC4D00046DD5 /* FXSwitchView.m */; };
+		18A20B6E20A3DC4D00046DD5 /* FXTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A20B6C20A3DC4D00046DD5 /* FXTitleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		18A20B5620A3DACE00046DD5 /* HFXMenuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFXMenuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A20B5A20A3DACE00046DD5 /* HFXMenuDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFXMenuDemoUITests.m; sourceTree = "<group>"; };
 		18A20B5C20A3DACE00046DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18A20B6920A3DC4D00046DD5 /* HFXSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFXSwitchView.h; sourceTree = "<group>"; };
-		18A20B6A20A3DC4D00046DD5 /* HFXTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFXTitleView.h; sourceTree = "<group>"; };
-		18A20B6B20A3DC4D00046DD5 /* HFXSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFXSwitchView.m; sourceTree = "<group>"; };
-		18A20B6C20A3DC4D00046DD5 /* HFXTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFXTitleView.m; sourceTree = "<group>"; };
+		18A20B6920A3DC4D00046DD5 /* FXSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXSwitchView.h; sourceTree = "<group>"; };
+		18A20B6A20A3DC4D00046DD5 /* FXTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXTitleView.h; sourceTree = "<group>"; };
+		18A20B6B20A3DC4D00046DD5 /* FXSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXSwitchView.m; sourceTree = "<group>"; };
+		18A20B6C20A3DC4D00046DD5 /* FXTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXTitleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 		18A20B3520A3DACC00046DD5 /* HFXMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				18A20B6820A3DC4C00046DD5 /* HFXMenuView */,
+				18A20B6820A3DC4C00046DD5 /* FXMenuView */,
 				18A20B3620A3DACC00046DD5 /* AppDelegate.h */,
 				18A20B3720A3DACC00046DD5 /* AppDelegate.m */,
 				18A20B3920A3DACC00046DD5 /* ViewController.h */,
@@ -139,15 +139,15 @@
 			path = HFXMenuDemoUITests;
 			sourceTree = "<group>";
 		};
-		18A20B6820A3DC4C00046DD5 /* HFXMenuView */ = {
+		18A20B6820A3DC4C00046DD5 /* FXMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				18A20B6920A3DC4D00046DD5 /* HFXSwitchView.h */,
-				18A20B6B20A3DC4D00046DD5 /* HFXSwitchView.m */,
-				18A20B6A20A3DC4D00046DD5 /* HFXTitleView.h */,
-				18A20B6C20A3DC4D00046DD5 /* HFXTitleView.m */,
+				18A20B6920A3DC4D00046DD5 /* FXSwitchView.h */,
+				18A20B6B20A3DC4D00046DD5 /* FXSwitchView.m */,
+				18A20B6A20A3DC4D00046DD5 /* FXTitleView.h */,
+				18A20B6C20A3DC4D00046DD5 /* FXTitleView.m */,
 			);
-			path = HFXMenuView;
+			path = FXMenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,9 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A20B6E20A3DC4D00046DD5 /* HFXTitleView.m in Sources */,
+				18A20B6E20A3DC4D00046DD5 /* FXTitleView.m in Sources */,
 				18A20B3B20A3DACC00046DD5 /* ViewController.m in Sources */,
-				18A20B6D20A3DC4D00046DD5 /* HFXSwitchView.m in Sources */,
+				18A20B6D20A3DC4D00046DD5 /* FXSwitchView.m in Sources */,
 				18A20B4620A3DACD00046DD5 /* main.m in Sources */,
 				18A20B3820A3DACC00046DD5 /* AppDelegate.m in Sources */,
 			);

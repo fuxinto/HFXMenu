@@ -6,7 +6,7 @@
 //  Copyright © 2017年 黄福鑫. All rights reserved.
 //
 
-#import "HFXTitleView.h"
+#import "FXTitleView.h"
 /**
  *  设备的高
  */
@@ -16,7 +16,7 @@
  */
 #define DEVICE_WIDTH ([UIScreen mainScreen].bounds.size.width)
 
-@interface HFXTitleView ()
+@interface FXTitleView ()
 
 @property (nonatomic, assign) NSInteger             currentIndex;
 @property (nonatomic, assign) CGFloat               btnWidth;
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation HFXTitleView
+@implementation FXTitleView
 
 
 - (void)drawRect:(CGRect)rect {

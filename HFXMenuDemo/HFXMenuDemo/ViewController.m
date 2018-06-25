@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HFXSwitchView.h"
+#import "FXSwitchView.h"
 
 @interface ViewController ()<HFXSwitchViewDelegate>{
     NSArray *array;
@@ -23,14 +23,14 @@
     NSMutableArray *vcs =[NSMutableArray array];
     for (int i =0; i< array.count; i++) {
         UIViewController *VC = [[UIViewController alloc]init];
-        int R = (arc4random() % 256) ;
-        int G = (arc4random() % 256) ;
-        int B = (arc4random() % 256) ;
+        int R = (arc4random() % 256);
+        int G = (arc4random() % 256);
+        int B = (arc4random() % 256);
         VC.view.backgroundColor = [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1];
         [vcs addObject:VC];
     }
     self.navigationItem.title = array.firstObject;
-    HFXSwitchView *view = [[HFXSwitchView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) WithTitles:array WithController:vcs];
+    FXSwitchView *view = [[FXSwitchView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) WithTitles:array WithController:vcs];
     view.delegate = self;
     [self.view addSubview:view];
 }

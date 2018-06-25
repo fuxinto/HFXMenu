@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 typedef void(^TitleViewBlock) (NSInteger index);
-@interface HFXTitleView : UIScrollView
+@interface FXTitleView : UIScrollView
 @property (nullable, nonatomic,copy) UIColor *      titleColor;
 @property (nullable, nonatomic,copy) UIColor *      selectedTitleColor;
 @property (nullable, nonatomic,copy) UIColor *      lineColor;
